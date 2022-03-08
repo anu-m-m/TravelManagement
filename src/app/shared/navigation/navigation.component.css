@@ -1,0 +1,18 @@
+.navcls {
+    display: block;
+    background-color: #84ABF9;
+    color: #00126A;
+    padding: 15px;
+}
+
+.navelms {
+    padding: 6px;
+    display: inline;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;    
+}
+
+.navelms:hover{
+    background-color: #2e74ff;
+} 

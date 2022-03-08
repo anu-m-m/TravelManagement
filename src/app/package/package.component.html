@@ -1,1 +1,9 @@
-<p>package works!</p>
+<div class="pkg-container">
+    <div class="pkg-header">
+        <input type="text" placeholder="Search">
+        <button (click)="onCreatePkg()" class="add-pkg">Create package</button>        
+    </div>
+    <div>
+        <app-list-package [packg]="packages"></app-list-package>
+    </div>
+</div>

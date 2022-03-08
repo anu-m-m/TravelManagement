@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-package',
   templateUrl: './list-package.component.html',
   styleUrls: ['./list-package.component.css']
 })
-export class ListPackageComponent implements OnInit {
 
-  constructor() { }
+export class ListPackageComponent implements OnInit {
+  
+ @Input() packg:any[];
+
+  constructor() {
+    console.log(this.packg);
+   }
 
   ngOnInit(): void {
   }
+
+
 
 }

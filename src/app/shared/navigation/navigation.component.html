@@ -1,1 +1,7 @@
-<p>navigation works!</p>
+<div class="navcls">
+    <ul style="list-style-type: none;">
+        <li  class="navelms"><a [routerLink]="['/customer']" >Customer</a></li>
+        <li (click)="onSelect('package')" class="navelms">Package</li>
+        <li (click)="onSelect('users')" class="navelms">Users</li>
+    </ul>
+</div>

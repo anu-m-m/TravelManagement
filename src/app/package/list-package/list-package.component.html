@@ -1,1 +1,25 @@
-<p>list-package works!</p>
+<div class="table-cont">
+    <table class="w-100">
+        <th class="">Package Name</th>
+        <th>Destination</th>
+        <th>Sublocation</th>
+        <th>Trip Days</th>
+        <th>Travel Options</th>
+        <th>Food Options</th>
+        <th>Price</th>
+        <tbody>
+            <!-- /packages from the array obj -->
+            <tr *ngFor="let pkg of packg">
+                <td>{{pkg.pkgName}}</td>
+                <td>{{pkg.pkgDesc}}</td>
+                <td>{{pkg.destination}}</td>
+                <td>{{pkg.tripdays}}</td>
+                <td>{{pkg.travelOpt}}</td>
+                <td>{{pkg.foodOpt}}</td>
+                <td>{{pkg.price}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
