@@ -1,7 +1,7 @@
 <div class="navcls">
     <ul style="list-style-type: none;">
-        <li  class="navelms"><a [routerLink]="['/customer']" >Customer</a></li>
-        <li (click)="onSelect('package')" class="navelms">Package</li>
-        <li (click)="onSelect('users')" class="navelms">Users</li>
+        <li class="navelms"><a routerLink="/customer">Customer</a></li>
+        <li class="navelms"><a routerLink="/package">Package</a></li>
+        <li class="navelms" (click)="onSelect('customer')">User</li>
     </ul>
 </div>

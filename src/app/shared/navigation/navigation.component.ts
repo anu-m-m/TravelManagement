@@ -8,13 +8,15 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private rtr: Router) { }
 
   ngOnInit(): void {
   }
 
   onSelect(val: string){
-    this.router.navigate([`/${val}`])
+    const abc = 'link 2';
+    // /${val} ..use /?
+    this.rtr.navigate([`/${val}`],{state: {abc}})
   }
 
 }
