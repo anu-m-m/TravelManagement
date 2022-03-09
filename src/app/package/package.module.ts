@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { PackageComponent } from './package.component';
 import { AddPackageComponent } from './add-package/add-package.component';
 import { ListPackageComponent } from './list-package/list-package.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -13,7 +15,12 @@ import { ListPackageComponent } from './list-package/list-package.component';
     ListPackageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    BrowserModule
+  ],
+  exports: [
+    PackageComponent
   ]
 })
 export class PackageModule { }

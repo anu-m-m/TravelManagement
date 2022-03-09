@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { PackageModule } from './package/package.module';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PackageModule,
     SharedModule
   ],
   providers: [],

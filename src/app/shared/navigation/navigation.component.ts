@@ -15,8 +15,7 @@ export class NavigationComponent implements OnInit {
 
   onSelect(val: string){
     const abc = 'link 2';
-    // /${val} ..use /?
-    this.rtr.navigate([`/${val}`],{state: {abc}})
+    this.rtr.navigate([val],{state: {navVal: 'from link 2'}})
   }
 
 }
