@@ -41,10 +41,10 @@ export class PackageService {
     }
   ];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getUsername(){
-    return 'anu';
+    return 'anu'
   }
 
   fetchPackages(): Observable<any[]>{

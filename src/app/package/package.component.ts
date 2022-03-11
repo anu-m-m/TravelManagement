@@ -20,10 +20,12 @@ export class PackageComponent implements OnInit {
     const name = this.pkgService.getUsername();
     console.log(name);
 
-    this.pkgService.fetchPackages().subscribe((pkg) => {
-      this.packages = pkg;
-    }, (err) => {
-      console.error(err);
+    this.pkgService.fetchPackages()
+      .subscribe((pkg) => {
+        this.packages = pkg;
+      },
+      (err) => {
+        console.error(err);
     });
   }
 
